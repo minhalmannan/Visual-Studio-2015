@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap" rel="stylesheet">
+    <title>Delicious Recipes</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("style.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            font-family: 'Baloo Thambi 2', cursive;
+
+
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            /* float: left; */
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 136px;
+
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 36%;
+            margin: 29px auto;
+            clear: both;
+
+
+        }
+
+        .right {
+            position: absolute;
+            /* float: right; */
+            right: 34px;
+            top: 43px;
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            font-weight: bolder;
+            /* float: left; */
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 20px;
+            /* font-size: 25px; */
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            /* color: rgb(172, 120, 23); */
+            color: red;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            padding: 4px 14px;
+            /* background-color: rgb(222, 78, 78);
+            border-radius: 10px; */
+            /* text-decoration: underline;
+            text-decoration-color: rgb(222, 78, 78); */
+            font-size: 23px;
+            cursor: pointer;
+
+        }
+
+        /* .btn2 {
+            margin: 0px 9px;
+            padding: 5px 20px;
+            /* background-color: rgb(222, 78, 78); 
+            border-radius: 12px; 
+            text-decoration: none;
+            color: black;
+            font-size: 23px;
+            cursor: pointer; }*/
+
+
+        
+
+        .btn2 a {
+            margin: 0px 9px;
+            padding: 5px 20px;
+            color: white;
+            text-decoration: none;
+            background-color: rgb(222, 78, 78);
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+
+
+        }
+
+        .btn2 a:hover {
+            background-color: #54241c;
+            /* border-color: none; */
+        }
+
+        .btn a {
+            text-decoration: underline;
+            text-decoration-color: rgb(222, 78, 78);
+            color: black;
+
+        }
+
+        .btn a:hover {
+            color: red
+        }
+
+        .container {
+            /* border: 2px solid green; */
+            margin: 106px 69px;
+            padding: 75px;
+            width: 33%;
+            /* border-radius: 20px; */
+
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 11px 2px;
+            margin: 11px auto;
+            border: 3px solid black;
+            font-size: 16px;
+            border-radius: 8px;
+            font-family: 'Baloo Thambi 2', cursive;
+
+        }
+        .formgroup3 input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 25px 2px;
+            margin: 15px auto;
+            border: 3px solid black;
+            font-size: 16px;
+            border-radius: 8px;
+            font-family: 'Baloo Thambi 2', cursive;
+
+        }
+
+        .formgroup2 , .formgroup2a {
+display: inline-block;
+
+        }
+
+        
+        .formgroup2 input {
+            text-align: center;
+            width: 254px;
+            padding: 10px 10px;
+            margin: 3px 0px 3px 60px ;
+            border: 3px solid black;
+            font-size: 16px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: 'Baloo Thambi 2', cursive;
+          
+
+
+        }
+          
+        .formgroup2a input {
+            text-align: center;
+            width: 254px;
+            padding: 10px 10px;
+            margin: auto;
+            border: 3px solid black;
+            font-size: 16px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: 'Baloo Thambi 2', cursive;
+            
+          
+
+
+        }
+           
+
+          
+
+        h1 {
+            /* text-align: center; */
+            color: #54241c;
+            margin-top: 0px;
+            font-weight:bolder;
+            /* font-weight: 500; */
+            font-size:55px;
+            /* border: 2px solid white; */
+            width: 140%;
+            
+             
+
+        }
+        .container button{
+            display: block;
+            width: 100%;
+            margin:20px auto;
+            padding: 10px;
+            border: rgb(222, 78, 78);
+            border-radius: 35px;
+            background-color: rgb(222, 78, 78);
+            font-family: 'Baloo Thambi 2', cursive;
+            cursor: pointer;
+            font-size: 22px !important;
+            color: white;
+            
+
+
+
+        }
+        .container button:hover{
+            background-color: #54241c;
+
+        }
+        /* ont-family: "Mitr",sans-serif;
+    text-transform: inherit !important;
+    padding: 25px 43px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    border-radius: 35px; */
+
+    
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png.webp" alt="error..">
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" target="_top">HOME</a></li>
+                <li><a href="" target="_top">MENU</a></li>
+                <li><a href="" target="_top">BLOG</a></li>
+                <li><a href="" target="_top">ABOUT</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <btton class="btn"><a href="" target="_top">Book a Table</a></btton>
+            <btton class="btn2"><a href="" target="_top">Email Us</a></btton>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Meet,Eat & Enjoy the true test</h1>
+
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="formgroup2">
+                <input type="number" name="" placeholder="Enter number of guest">
+                </div>
+
+              <div class="formgroup2a">  
+                <input type="date" name="">
+            </div>
+
+            <div class="formgroup3">
+                <input type="text" name="" placeholder="Enter your message">
+            </div>
+            <button class="btn3">Sent Request</button>
+        </form>
+    </div>
+</body>
+
+</html>
