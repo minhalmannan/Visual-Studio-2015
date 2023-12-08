@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Fusion Wall</title>
+    <!-- <link rel="stylesheet" href="styleeco.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;700&family=Baloo+Thambi+2:wght@600&family=Bree+Serif&family=Itim&family=Poppins:ital,wght@0,600;1,200;1,400&family=Roboto:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+#navbar {
+    position: relative;
+    align-items: center;
+    display: flex;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', 'cursive';
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(41, 167, 41);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+}
+
+#home::before {
+    content: "";
+    background: url('https://img.freepik.com/premium-photo/green-wall-mockup-with-green-plant-shelf3d-rendering_977617-29724.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.74;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(167, 216, 167);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+    width: auto;
+
+}
+
+#services .box img {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-image: url('bg.jpg');
+    height: 44%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 100px;
+
+
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background: url("contact.jpg") no-repeat center center/cover;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.contact-box form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+footer {
+    background: rgb(41, 167, 41);
+    color: white;
+    opacity: 0.35;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-about {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-decoration: underline;
+    margin: 7px 5px;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(202, 235, 202);
+    opacity: 0.84;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <!-- <div id="logo">
+            <img src="logo.png" alt="MyOnlineMeal.com">
+        </div> -->
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Transforming walls with Nature</h1>
+
+        <p>Looking for better interior designing? Eco Fusion Walls, is the solution to all your needs. Along
+            with the innovation for new design trends it specializes in creating aesthetics and artistry for your
+            home.
+        </p>
+        <button class="btn">VIEW OUR RESOURCES</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-about center">About Us</h1>
+        <p class="center">Welcome to eco fusion walls, where our innovative bio walls, featuring carbon-absorbing Kadaka
+            ferns, redefine spaces by improving air quality and reducing pollutants.</p>
+        <div id="services">
+            <div class="box">
+                <img src="images1.jpeg" alt="">
+                <h2 class="h-secondary center">Outdoor Walls</h2>
+                <p class="center">Although a small piece of your landscape, outdoor wall decor defines your space
+                    character and bestows a polished finish.</p>
+            </div>
+            <div class="box">
+                <img src="images4.jpg" alt="">
+                <h2 class="h-secondary center">Vertical Gardening</h2>
+                <p class="center">A vertical approach to biophilic design Living Walls Design Cityscapes’ living walls
+                    are self-contained vertical gardens of plants installed into a metal framework and mounted to an
+                    existing wall.</p>
+            </div>
+            <div class="box">
+                <img src="images3.jpg" alt="">
+                <h2 class="h-secondary center">Green Walls</h2>
+                <p class="center">Revitalize your space with our Green Walls,a breath of fresh air, enhancing aesthetics
+                    and well-being effortlessly.</p>
+            </div>
+
+        </div>
+        <div id="services">
+            <div class="box">
+                <img src="images5.jpg" alt="">
+                <h2 class="h-secondary center">Box walls</h2>
+                <p class="center">Transform your space with our Flower Box Wall,cascade of vibrant blooms bringing
+                    natural elegance and low-maintenance beauty to any room. Elevate your surroundings effortlessly.</p>
+            </div>
+            <div class="box">
+                <img src="images6.jpg" alt="">
+                <h2 class="h-secondary center">Living Walls</h2>
+                <p class="center">These unique wall-mounted planters grow flowers, succulents, ferns and ivies indoors
+                    right on your living room wall. The plants grow in a planting grid, while a white cedar wood frame
+                    houses a watering tray on top that trickles water down to each pocket in the grid.</p>
+            </div>
+            <div class="box">
+                <img src="images7.jpg" alt="">
+                <h2 class="h-secondary center">Herb Walls</h2>
+                <p class="center">Herbs are an amazing group of plants. Both ornamental and edible they can add beauty,
+                    scent, color and texture to gardens, planter and even live walls.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">WANT TO KNOW MORE?</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo1.png" alt="our client">
+                <img src="logo5.png" alt="our client">
+                <img src="logo3.png" alt="our client">
+                <img src="logo4.png" alt="our client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="I want..."></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.ecofusionwalls.com All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
